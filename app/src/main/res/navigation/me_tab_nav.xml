@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/me_tab_nav"
+    app:startDestination="@id/fragmentMeTabSkills">
+    <fragment
+        android:id="@+id/fragmentMeTabSkills"
+        android:name="com.example.cshet4.ui.me.meTabFragments.skillsTab.FragmentMeTabSkills"
+        android:label="fragment_me_tab_skills_fragment"
+        tools:layout="@layout/fragment_me_tab_skills" >
+        <action
+            android:id="@+id/action_fragmentMeTabSkills_to_fragmentMeTabAttributes"
+            app:destination="@id/fragmentMeTabAttributes" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMeTabAttributes"
+        android:name="com.example.cshet4.ui.me.meTabFragments.attributesTab.FragmentMeTabAttributes"
+        android:label="fragment_me_tab_attributes_fragment"
+        tools:layout="@layout/fragment_me_tab_attributes" >
+        <action
+            android:id="@+id/action_fragmentMeTabAttributes_to_fragmentMeTabEquipment"
+            app:destination="@id/fragmentMeTabEquipment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMeTabEquipment"
+        android:name="com.example.cshet4.ui.me.meTabFragments.FragmentMeTabEquipment"
+        android:label="fragment_me_tab_equipment_fragment"
+        tools:layout="@layout/fragment_me_tab_equipment" />
+</navigation>

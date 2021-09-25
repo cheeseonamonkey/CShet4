@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="boopSpinnerOptionsArray">
+        <item>Log now</item>
+        <item>Total number of requests</item>
+    </string-array>
+</resources>
